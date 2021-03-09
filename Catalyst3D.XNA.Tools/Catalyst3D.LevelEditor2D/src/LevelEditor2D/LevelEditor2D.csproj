@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{158106CB-5D89-426A-89C6-2C34AE78CEBC}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LevelEditor2D</RootNamespace>
+    <AssemblyName>LevelEditor2D</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>eade5271-92d7-4c7b-9fdc-05195c985275</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://apps.buzzedinteractive.com/LevelEditor2D/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Level Editor 2D</ProductName>
+    <PublisherName>Buzzed Interactive</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>110</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F906D0A0913C6DA31913DB6BB361A3D5BDA8AA05</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LevelEditor2D_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CollectionClasses\KeyFrameCollection.cs" />
+    <Compile Include="CollectionClasses\Vector2Collection.cs" />
+    <Compile Include="CollectionClasses\VisualObjectCollection.cs" />
+    <Compile Include="Controls\conEmitterForces.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\conEmitterForces.Designer.cs">
+      <DependentUpon>conEmitterForces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\conObjectTypeDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\conObjectTypeDropDown.Designer.cs">
+      <DependentUpon>conObjectTypeDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\conRenderer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\conRenderer.Designer.cs">
+      <DependentUpon>conRenderer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\conSequenceEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\conSequenceEditor.designer.cs">
+      <DependentUpon>conSequenceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\conSprite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\conSprite.Designer.cs">
+      <DependentUpon>conSprite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\conSpriteContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\conSpriteContainer.Designer.cs">
+      <DependentUpon>conSpriteContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\conNodeEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\conNodeEditor.Designer.cs">
+      <DependentUpon>conNodeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityClasses\AppSettings.cs" />
+    <Compile Include="EntityClasses\ColorPack.cs" />
+    <Compile Include="EntityClasses\EditorSpriteBox.cs" />
+    <Compile Include="EntityClasses\EditorLabel.cs" />
+    <Compile Include="EntityClasses\EditorButton.cs" />
+    <Compile Include="EntityClasses\EditorModel.cs" />
+    <Compile Include="EntityClasses\EditorActor.cs" />
+    <Compile Include="EntityClasses\EditorEmitter.cs" />
+    <Compile Include="EntityClasses\EditorGroup.cs" />
+    <Compile Include="EntityClasses\EditorSprite.cs" />
+    <Compile Include="EntityClasses\GridDisplay.cs" />
+    <Compile Include="EntityClasses\LedgeBuilder.cs" />
+    <Compile Include="EntityClasses\LedgeNodeDisplay.cs" />
+    <Compile Include="EntityClasses\PathingTool.cs" />
+    <Compile Include="EntityClasses\ResolutionMarkers.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Forms\frmAddLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddLabel.Designer.cs">
+      <DependentUpon>frmAddLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAttachPathingNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAttachPathingNode.Designer.cs">
+      <DependentUpon>frmAttachPathingNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDuplicateSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDuplicateSpecial.designer.cs">
+      <DependentUpon>frmDuplicateSpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGroupObjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGroupObjects.designer.cs">
+      <DependentUpon>frmGroupObjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOptions.designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSequencer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSequencer.designer.cs">
+      <DependentUpon>frmSequencer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RendererWindow.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Studio.cs" />
+    <Compile Include="TypeEditors\EmitterForceEditor.cs" />
+    <Compile Include="TypeEditors\NodeEditor.cs" />
+    <Compile Include="TypeEditors\ObjectTypeDropDown.cs" />
+    <Compile Include="TypeEditors\SequenceEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+    <Content Include="Resources\accept.png" />
+    <Content Include="Resources\add.png" />
+    <Content Include="Resources\add_page.png" />
+    <None Include="Resources\application_link.png" />
+    <None Include="Resources\application_side_expand.png" />
+    <Content Include="Resources\blue_button.png" />
+    <Content Include="Resources\cd_rw.png" />
+    <Content Include="Resources\cr128-action-duplicate_window.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\delete_page.png" />
+    <Content Include="Resources\down.png" />
+    <Content Include="Resources\eject.png" />
+    <Content Include="Resources\fast_forward.png" />
+    <Content Include="Resources\folder.png" />
+    <Content Include="Resources\folder_accept.png" />
+    <Content Include="Resources\folder_add.png" />
+    <Content Include="Resources\folder_delete.png" />
+    <Content Include="Resources\folder_down.png" />
+    <Content Include="Resources\folder_edit.png" />
+    <Content Include="Resources\folder_empty.png" />
+    <Content Include="Resources\folder_next.png" />
+    <Content Include="Resources\folder_previous.png" />
+    <Content Include="Resources\folder_remove.png" />
+    <Content Include="Resources\green_button.png" />
+    <Content Include="Resources\help.png" />
+    <Content Include="Resources\images.png" />
+    <Content Include="Resources\image_add.png" />
+    <Content Include="Resources\image_delete.png" />
+    <Content Include="Resources\image_next.png" />
+    <Content Include="Resources\lock.png" />
+    <None Include="Resources\mouse_delete.png" />
+    <Content Include="Resources\next.png" />
+    <Content Include="Resources\notebook.png" />
+    <Content Include="Resources\notebook_accept.png" />
+    <Content Include="Resources\notebook_delete.png" />
+    <Content Include="Resources\page.png" />
+    <None Include="LevelEditor2D_TemporaryKey.pfx" />
+    <None Include="Resources\page_copy.png" />
+    <Content Include="Resources\Pause-Normal-32x32.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\pencil_delete.png" />
+    <None Include="Resources\pencil_go.png" />
+    <Content Include="Resources\Play-Normal-32x32.png" />
+    <Content Include="Resources\play.png" />
+    <None Include="Resources\player_pause-256.png" />
+    <None Include="Resources\player_play-256.png" />
+    <None Include="Resources\player_stop-256.png" />
+    <Content Include="Resources\previous.png" />
+    <Content Include="Resources\Record-Normal-32x32.png" />
+    <Content Include="Resources\record.png" />
+    <Content Include="Resources\red_button.png" />
+    <Content Include="Resources\remove.png" />
+    <Content Include="Resources\repeat.png" />
+    <Content Include="Resources\rewind.png" />
+    <Content Include="Resources\save.png" />
+    <None Include="Resources\shape_group.png" />
+    <Content Include="Resources\skip_backward.png" />
+    <Content Include="Resources\skip_forward.png" />
+    <Content Include="Resources\speaker.png" />
+    <Content Include="Resources\speaker_accept.png" />
+    <Content Include="Resources\speaker_delete.png" />
+    <Content Include="Resources\speaker_remove.png" />
+    <Content Include="Resources\Stop-Normal-32x32.png" />
+    <Content Include="Resources\stop.png" />
+    <Content Include="Resources\unlock.png" />
+    <Content Include="Resources\up.png" />
+    <Content Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Catalyst3D.XNA.Engine\Catalyst3D.XNA.Engine.csproj">
+      <Project>{5D773A71-CB3F-4103-B919-27C3F8E2518B}</Project>
+      <Name>Catalyst3D.XNA.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Catalyst3D.XNA.Tools\Catalyst3D.XNA.Tools.csproj">
+      <Project>{C01ECA73-D4E0-4B43-B527-3DE9AB4D03F0}</Project>
+      <Name>Catalyst3D.XNA.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LevelEditor2DContent\LevelEditor2DContent.contentproj">
+      <Name>LevelEditor2DContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\conEmitterForces.resx">
+      <DependentUpon>conEmitterForces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\conObjectTypeDropDown.resx">
+      <DependentUpon>conObjectTypeDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\conRenderer.resx">
+      <DependentUpon>conRenderer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\conSequenceEditor.resx">
+      <DependentUpon>conSequenceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\conSprite.resx">
+      <DependentUpon>conSprite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\conSpriteContainer.resx">
+      <DependentUpon>conSpriteContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\conNodeEditor.resx">
+      <DependentUpon>conNodeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddLabel.resx">
+      <DependentUpon>frmAddLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAttachPathingNode.resx">
+      <DependentUpon>frmAttachPathingNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDuplicateSpecial.resx">
+      <DependentUpon>frmDuplicateSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGroupObjects.resx">
+      <DependentUpon>frmGroupObjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSequencer.resx">
+      <DependentUpon>frmSequencer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
